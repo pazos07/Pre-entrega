@@ -1,1 +1,2 @@
 # Pre-entrega
+<!-- En este proyecto quise hacer un simulador de registro de pacientes como podria ser un consultorio. Intente hacerlo en bucle para que una vez cargado el formulario se pueda repetir, pero no pude implementarlo bien sin que se me rompa el condicional, lo deje comentado por si me pueden ayudar en la correccion de como implementarlo correctamente. La pagina html es basica tambien porque no hice el curso de WB y estoy aprendiendo sobre la marcha-->
