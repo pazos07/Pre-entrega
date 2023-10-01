@@ -1,5 +1,3 @@
-// main.js
-
 alert("¡Bienvenido a la inscripción!");
 
 function Paciente(nombre, apellido, edad) {
@@ -26,7 +24,7 @@ function InscripciónDelPaciente(paciente) {
 let respuestaDeUsuario = prompt("¿Quieres inscribir un paciente? (Si / No)");
 const tablaPacientes = document.getElementById("tablaPacientes");
 const nombresPacientes = [];
-const pacientes = []; // Array para almacenar los pacientes registrados
+const pacientes = []; 
 
 while (respuestaDeUsuario !== null && respuestaDeUsuario.trim().toLowerCase() === "si") {
   const nombre = prompt("Ingresa el nombre del paciente:");
@@ -47,7 +45,7 @@ while (respuestaDeUsuario !== null && respuestaDeUsuario.trim().toLowerCase() ==
     celdaEdad.textContent = paciente.edad;
 
     nombresPacientes.push(paciente.nombre);
-    pacientes.push(paciente); // Agregar el paciente al array de pacientes registrados
+    pacientes.push(paciente); 
   } else {
     alert("Por favor, ingrese una edad válida.");
   }
@@ -62,21 +60,17 @@ while (respuestaDeUsuario !== null && respuestaDeUsuario.trim().toLowerCase() ==
 
 console.log("Nombres de los pacientes registrados:", nombresPacientes);
 
-// Agrega un controlador de eventos para el botón de filtro
 document.getElementById("btnFiltrar").addEventListener("click", function() {
   const filtroEdad = parseInt(document.getElementById("filtroEdad").value);
 
-  // Filtrar los pacientes según la edad seleccionada
   const pacientesFiltrados = pacientes.filter(function(paciente) {
     return paciente.edad <= filtroEdad;
   });
 
-  // Limpiar la tabla de pacientes antes de mostrar los resultados filtrados
   while (tablaPacientes.firstChild) {
     tablaPacientes.removeChild(tablaPacientes.firstChild);
   }
 
-  // Mostrar los pacientes filtrados en la tabla
   pacientesFiltrados.forEach(function(paciente) {
     const fila = tablaPacientes.insertRow();
     const celdaNombre = fila.insertCell(0);
