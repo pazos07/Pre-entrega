@@ -5,34 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inscripción</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <h2>Inscripción del paciente</h2>
-  <form id="formulario">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" required>
-    <br><br>
+  <div class="titulo1"><h2>Inscripción del paciente</h2></div>
+ <section><form id="formulario">
+   <div><label for="nombre">Nombre:</label>
+    <input class="texto" type="text" id="nombre" required></div>
 
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" required>
-    <br><br>
+  <div> <label for="apellido">Apellido:</label>
+    <input class="texto" type="text" id="apellido" required></div>
 
-    <label for="edad">Edad:</label>
-    <input type="number" id="edad" required>
-    <br><br>
+  <div><label for="edad">Edad:</label>
+    <input class="texto" type="number" id="edad" required></div>
 
-    <input type="submit" value="Inscribir">
-    <br><br>
-    
-  </form>
+  <div><input class="boton" type="submit" value="Inscribir"></div>
 
-  <label for="filtroEdad">Filtrar por Edad:</label>
+  </form></section>
+
+<div class="filtros"><label for="filtroEdad">Filtrar por Edad:</label>
 <input type="number" id="filtroEdad">
 <button id="btnFiltrar">Filtrar</button>
-<br><br>
+<button id="btnResetFiltro">Restablecer Filtro</button>
+<button id="btnLimpiarFormulario">Limpiar Tabla</button></div>
 
-  <table border="1">
+ <div class="tablainscripcion"><table border="1">
     <thead>
       <tr>
         <th>Nombre</th>
@@ -42,7 +40,7 @@
     </thead>
     <tbody id="tablaPacientes">
     </tbody>
-  </table>
+  </table></div>
 
   <script src="main.js"></script>
 </body>

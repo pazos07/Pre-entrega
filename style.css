@@ -1,0 +1,64 @@
+* {
+ box-sizing: 0;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ background-color: gray;
+}
+
+section {
+ display: flex;
+ justify-content: center;
+ flex-direction: wrap;
+ flex-wrap: wrap;
+ height: 300px;
+ width: 100%;
+ margin: 10px;
+}
+
+
+
+div {
+ background-color: darkgray;
+ border: 3px solid gray;
+ margin: 10px;
+ align-items: center;
+}
+
+div.titulo1 {
+ display: flex;
+ justify-content: center;
+ flex-direction: wrap;
+ flex-wrap: wrap;
+ height: 50px;
+ width: 100%;
+ margin: 0px;
+}
+
+section.filtroytabla {
+ display: flex;
+ justify-content: center;
+ flex-direction: wrap;
+ flex-wrap: wrap;
+ height: 25px;
+ width: 100%;
+ margin: 10px;
+}
+
+div.filtros {
+ text-align: center;
+ margin: 0 auto;
+ max-width: 40%;
+}
+
+div.tablainscripcion {
+ text-align: center;
+ margin: 0 auto;
+ max-width: 300px;
+}
+
+.boton{
+ margin: 0 39%;
+}
