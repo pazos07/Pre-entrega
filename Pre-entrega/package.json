@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  },
+  "name": "entregafinal",
+  "description": "En este proyecto quise hacer un simulador de registro de pacientes como podria ser un consultorio.",
+  "version": "1.1.3",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pazos07/ProyectoFinal-Pazos.git"
+  },
+  "keywords": [
+    "javascript",
+    "curso",
+    "paciente"
+  ],
+  "author": "Pazos Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pazos07/ProyectoFinal-Pazos/issues"
+  },
+  "homepage": "https://github.com/pazos07/ProyectoFinal-Pazos#readme"
+}

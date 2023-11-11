@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <div class="titulo1">
+    <h2>Inscripción del paciente</h2>
+  </div>
+  <section>
+    <form id="formulario">
+      <div><label for="nombre">Nombre:</label>
+        <input class="texto" type="text" id="nombre" required>
+      </div>
+
+      <div> <label for="apellido">Apellido:</label>
+        <input class="texto" type="text" id="apellido" required>
+      </div>
+
+      <div><label for="edad">Edad:</label>
+        <input class="texto" type="number" id="edad" required>
+      </div>
+
+      <div><input class="boton" type="submit" value="Inscribir"></div>
+
+    </form>
+  </section>
+
+  <div class="filtros"><label for="filtroEdad">Filtrar por Edad:</label>
+    <input type="number" id="filtroEdad">
+    <button id="btnFiltrar">Filtrar</button>
+    <button id="btnResetFiltro">Restablecer Filtro</button>
+    <button id="btnLimpiarFormulario">Limpiar Tabla</button>
+  </div>
+
+  <div class="tablainscripcion">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody id="tablaPacientes">
+      </tbody>
+    </table>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
